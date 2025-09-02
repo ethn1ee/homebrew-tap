@@ -5,21 +5,21 @@
 class Committer < Formula
   desc "A tool to help you write better commit messages."
   homepage "https://github.com/ethn1ee/committer"
-  version "0.1.10"
+  version "0.1.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ethn1ee/committer/releases/download/v0.1.10/committer_0.1.10_darwin_amd64.tar.gz"
-      sha256 "bd2749d51a9be206344b404370741b62c12f36483fa89c6aa118c3c2ffd90a17"
+      url "https://github.com/ethn1ee/committer/releases/download/v0.1.11/committer_0.1.11_darwin_amd64.tar.gz"
+      sha256 "ebfff9cdf57683dfff6cc1f26e800295beea7a295644dc41db19f6a13c2829d3"
 
       def install
         bin.install "committer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ethn1ee/committer/releases/download/v0.1.10/committer_0.1.10_darwin_arm64.tar.gz"
-      sha256 "87e1f2d4c18cda3b3e143bac5e707eb953009209530441af645cf5a10f574e03"
+      url "https://github.com/ethn1ee/committer/releases/download/v0.1.11/committer_0.1.11_darwin_arm64.tar.gz"
+      sha256 "2eabb87eade4b9becd888156be01b50d0268e7800c0c9fd0e75b9469fea7d90f"
 
       def install
         bin.install "committer"
@@ -29,15 +29,15 @@ class Committer < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ethn1ee/committer/releases/download/v0.1.10/committer_0.1.10_linux_amd64.tar.gz"
-      sha256 "69ab1b5874df199e775561abae4380f04e92368375f01d5dc7a7dc636a1772a6"
+      url "https://github.com/ethn1ee/committer/releases/download/v0.1.11/committer_0.1.11_linux_amd64.tar.gz"
+      sha256 "2e9c101b479ef6bb4ce15f3a875a0365e9be964bb077938a4ccb777a5d15b908"
       def install
         bin.install "committer"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ethn1ee/committer/releases/download/v0.1.10/committer_0.1.10_linux_arm64.tar.gz"
-      sha256 "92f730eacaf090572aa498e9e9d453f4f5036ae0fa9dc86465540b560795b157"
+      url "https://github.com/ethn1ee/committer/releases/download/v0.1.11/committer_0.1.11_linux_arm64.tar.gz"
+      sha256 "051c1ac6c13ea0bf544470e6274efefc8e0bcb626a35e5260b5214a2021ac804"
       def install
         bin.install "committer"
       end
